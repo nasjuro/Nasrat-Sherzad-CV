@@ -135,6 +135,47 @@
             background-color: var(--primary-color);
         }
         
+        /* Certification Section */
+        .certification {
+            margin-bottom: 40px;
+        }
+        
+        .certification-item {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            position: relative;
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .certification-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .degree {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark-color);
+            margin-bottom: 5px;
+        }
+        
+        .institution {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+        
+        .date-location {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
         /* Experience Section */
         .experiences {
             margin-bottom: 40px;
@@ -233,7 +274,7 @@
         
         /* Skills Section */
         .skills {
-            margin-top: 40px;
+            margin-bottom: 40px;
             background-color: white;
             padding: 30px;
             border-radius: 8px;
@@ -347,7 +388,45 @@
             <h2 class="section-title">Summary</h2>
             <p>Computer Science graduate with a strong foundation in cloud computing, AWS Cloud Practitioner certified and actively expanding my expertise in AWS services. Working towards certified Solutions Architect, hands-on experience in building scalable cloud solutions, implementing AWS best practices, and working with core services such as EC2, S3, Lambda, and DynamoDB. Background in programming including Python combined with knowledge of Linux-based systems like Ubuntu, enabling optimisation of cloud environments effectively. Experience with web and mobile development, using languages such as JavaScript, HTML, CSS and modern frameworks, enhances ability to design and deploy efficient, scalable applications. With a problem-solving mindset and a passion for cloud technologies, I am eager to contribute to innovative solutions that leverage AWS infrastructure.</p>
         </section>
-        
+             
+        <section class="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skill-tags">
+                <span class="skill-tag">AWS Cloud</span>
+                <span class="skill-tag">AWS EC2</span>
+                <span class="skill-tag">AWS S3</span>
+                <span class="skill-tag">AWS Lambda</span>
+                <span class="skill-tag">AWS DynamoDB</span>
+                <span class="skill-tag">Linux/Ubuntu</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Databases</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Mobile Development</span>
+                <span class="skill-tag">Web Development</span>
+                <span class="skill-tag">Communication</span>
+                <span class="skill-tag">Problem Solving</span>
+                <span class="skill-tag">Customer Service</span>
+                <span class="skill-tag">Time Management</span>
+                <span class="skill-tag">Team Collaboration</span>
+                
+            </div>
+        </section>
+
+        <section class="certification">
+            <h2 class="section-title">Certification</h2>
+            
+            <div class="certification-item">
+                <h3 class="degree">AWS Certified Cloud Practitioner</h3>
+                <p class="institution">Amazon Web Services (AWS)</p>
+                <p class="date-location">03/2025 - 03/2028</p>
+            </div>
+        </section>
+
         <section class="experiences">
             <h2 class="section-title">Experience</h2>
             
@@ -420,6 +499,12 @@
             <h2 class="section-title">Education</h2>
             
             <div class="education-item">
+                <h3 class="degree">AWS Cloud Computing</h3>
+                <p class="institution">eCareers</p>
+                <p class="date-location">10/2024 - 08/2025 | Remote, London</p>
+            </div>    
+
+            <div class="education-item">
                 <h3 class="degree">Bachelor of Computer Science</h3>
                 <p class="institution">University of West London</p>
                 <p class="date-location">09/2021 - 06/2024 | Ealing, London</p>
@@ -435,29 +520,6 @@
                 <h3 class="degree">9 GCSE'S</h3>
                 <p class="institution">Ark Elvin Academy</p>
                 <p class="date-location">09/2014 - 06/2019 | Wembley, London</p>
-            </div>
-        </section>
-        
-        <section class="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skill-tags">
-                <span class="skill-tag">AWS Cloud Practitioner</span>
-                <span class="skill-tag">AWS EC2</span>
-                <span class="skill-tag">AWS S3</span>
-                <span class="skill-tag">AWS Lambda</span>
-                <span class="skill-tag">AWS DynamoDB</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Kotlin</span>
-                <span class="skill-tag">Android Studio</span>
-                <span class="skill-tag">UI/UX Design</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">Linux/Ubuntu</span>
-                <span class="skill-tag">Google Firebase</span>
-                <span class="skill-tag">Machine Learning</span>
             </div>
         </section>
     </main>
