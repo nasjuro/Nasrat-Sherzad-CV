@@ -65,8 +65,16 @@
             font-size: 1.3rem;
             font-weight: 300;
             margin-bottom: 20px;
+            margin-top: -20px;
         }
         
+        .profile-location {
+            font-size: 0.9rem;
+            font-weight: 300;
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }    
+
         /* Contact Info */
         .contact-info {
             display: flex;
@@ -114,6 +122,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             margin-bottom: 30px;
+            margin-top: 30px;
         }
         
         .section-title {
@@ -135,9 +144,44 @@
             background-color: var(--primary-color);
         }
         
+        /* Skills Section */
+        .skills {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        
+        .skill-tag:hover {
+            background-color: rgba(51, 51, 51, 0.1);
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+        
+        
         /* Certification Section */
         .certification {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
+            
         }
         
         .certification-item {
@@ -179,6 +223,7 @@
         /* Experience Section */
         .experiences {
             margin-bottom: 40px;
+            margin-top: 40px;
         }
         
         .experience-item {
@@ -271,39 +316,7 @@
         .institution {
             color: var(--primary-color);
         }
-        
-        /* Skills Section */
-        .skills {
-            margin-bottom: 40px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        
-        .skill-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        
-        .skill-tag {
-            background-color: var(--light-color);
-            color: var(--dark-color);
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            border: 1px solid transparent;
-        }
-        
-        .skill-tag:hover {
-            background-color: rgba(51, 51, 51, 0.1);
-            border-color: var(--primary-color);
-            transform: translateY(-2px);
-        }
-        
+            
         /* Responsive Styles */
         @media screen and (max-width: 768px) {
             .profile {
@@ -363,7 +376,8 @@
             <img src="nas pfp.jpg" alt="Nasrat Sherzad" class="profile-image">
             <div class="profile-info">
                 <h1>Nasrat Sherzad</h1>
-                <p class="profile-title">AWS Cloud Practitioner | Computer Science Graduate</p>
+                <p class="profile-title">AWS Aspiring Solutions Architect | Building Skills in AWS</p>
+                <p class="profile-location">London, UK</p>
                 
                 <div class="contact-info">
                     <div class="contact-item">
@@ -388,34 +402,98 @@
             <h2 class="section-title">Summary</h2>
             <p>Computer Science graduate with a strong foundation in cloud computing, AWS Cloud Practitioner certified and actively expanding my expertise in AWS services. Working towards certified Solutions Architect, hands-on experience in building scalable cloud solutions, implementing AWS best practices, and working with core services such as EC2, S3, Lambda, and DynamoDB. Background in programming including Python combined with knowledge of Linux-based systems like Ubuntu, enabling optimisation of cloud environments effectively. Experience with web and mobile development, using languages such as JavaScript, HTML, CSS and modern frameworks, enhances ability to design and deploy efficient, scalable applications. With a problem-solving mindset and a passion for cloud technologies, I am eager to contribute to innovative solutions that leverage AWS infrastructure.</p>
         </section>
-             
-        <section class="skills">
-            <h2 class="section-title">Skills</h2>
-            <div class="skill-tags">
-                <span class="skill-tag">AWS Cloud</span>
-                <span class="skill-tag">AWS EC2</span>
-                <span class="skill-tag">AWS S3</span>
-                <span class="skill-tag">AWS Lambda</span>
-                <span class="skill-tag">AWS DynamoDB</span>
-                <span class="skill-tag">Linux/Ubuntu</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Databases</span>
-                <span class="skill-tag">Docker</span>
-                <span class="skill-tag">Mobile Development</span>
-                <span class="skill-tag">Web Development</span>
-                <span class="skill-tag">Communication</span>
-                <span class="skill-tag">Problem Solving</span>
-                <span class="skill-tag">Customer Service</span>
-                <span class="skill-tag">Time Management</span>
-                <span class="skill-tag">Team Collaboration</span>
-                
+        
+    </main>
+    <main class="container">
+    <section class="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skill-tags">
+            <span class="skill-tag">AWS Cloud</span>
+            <span class="skill-tag">AWS EC2</span>
+            <span class="skill-tag">AWS S3</span>
+            <span class="skill-tag">AWS Lambda</span>
+            <span class="skill-tag">AWS DynamoDB</span>
+            <span class="skill-tag">Linux/Ubuntu</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Databases</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Mobile Development</span>
+            <span class="skill-tag">Web Development</span>
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">Customer Service</span>
+            <span class="skill-tag">Time Management</span>
+            <span class="skill-tag">Team Collaboration</span>
+            
+        </div>
+    </section>    
+
+        <section class="education">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <h3 class="degree">AWS Cloud Computing</h3>
+                <p class="institution">eCareers</p>
+                <p class="date-location">10/2024 - 08/2025 | Remote, London</p>
+            </div>    
+
+            <div class="education-item">
+                <h3 class="degree">Bachelor of Computer Science</h3>
+                <p class="institution">University of West London</p>
+                <p class="date-location">09/2021 - 06/2024 | Ealing, London</p>
+            </div>
+            
+            <div class="education-item">
+                <h3 class="degree">BTEC Applied Science</h3>
+                <p class="institution">Ark Academy</p>
+                <p class="date-location">09/2019 - 06/2021 | Wembley, London</p>
+            </div>
+            
+            <div class="education-item">
+                <h3 class="degree">9 GCSE'S</h3>
+                <p class="institution">Ark Elvin Academy</p>
+                <p class="date-location">09/2014 - 06/2019 | Wembley, London</p>
             </div>
         </section>
+
+        <section class="experiences">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="experience-item">
+                <h3 class="job-title">Static Website Deployment on AWS</h3>
+                <p class="company">Personal Project</p>
+                <p class="date-location">03/2025 - 03/2025 | London</p>
+                <ul class="responsibilities">
+                    <li>Deployed a static website on AWS S3 with configured bucket policies and static website hosting settings to demonstrate cloud deployment skills.</li>
+                    <li>Implemented a professional URL shortening solution using Bit.ly to improve accessibility and showcase best practices in web hosting.</li>
+                </ul>
+            </div>    
+
+            <div class="experience-item">
+                <h3 class="job-title">Cloud Security Threat Detection System</h3>
+                <p class="company">Personal Project</p>
+                <p class="date-location">01/2024 - 06/2024 | Wembley, London</p>
+                <ul class="responsibilities">
+                    <li>Developed an anomaly detection framework for cloud-based networks using the Isolation Forest algorithm to identify potential threats effectively.</li>
+                    <li>Implemented a scalable, real-time solution using Docker and AWS S3, integrating cloud services for a robust architecture and applying machine learning to improve security resilience.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <h3 class="job-title">Mobile E-commerce Application</h3>
+                <p class="company">Personal Project</p>
+                <p class="date-location">01/2023 - 04/2023 | Wembley, London</p>
+                <ul class="responsibilities">
+                    <li>Developed an online mobile app for a clothing store, emphasizing aesthetic clothing designs with user-friendly UI/UX wireframes created in Android Studio.</li>
+                    <li>Utilized Java and Kotlin for front-end and back-end development, whilst integrating Google Firebase for secure cloud storage and account management features.</li>
+                </ul>
+            </div>
+        </section>    
 
         <section class="certification">
             <h2 class="section-title">Certification</h2>
@@ -461,68 +539,6 @@
             </div>
         </section>
         
-        <section class="experiences">
-            <h2 class="section-title">Projects</h2>
-            
-            <div class="experience-item">
-                <h3 class="job-title">Static Website Deployment on AWS</h3>
-                <p class="company">Personal Project</p>
-                <p class="date-location">03/2025 - 03/2025 | London</p>
-                <ul class="responsibilities">
-                    <li>Deployed a static website on AWS S3 with configured bucket policies and static website hosting settings to demonstrate cloud deployment skills.</li>
-                    <li>Implemented a professional URL shortening solution using Bit.ly to improve accessibility and showcase best practices in web hosting.</li>
-                </ul>
-            </div>    
-
-            <div class="experience-item">
-                <h3 class="job-title">Cloud Security Threat Detection System</h3>
-                <p class="company">Personal Project</p>
-                <p class="date-location">01/2024 - 06/2024 | Wembley, London</p>
-                <ul class="responsibilities">
-                    <li>Developed an anomaly detection framework for cloud-based networks using the Isolation Forest algorithm to identify potential threats effectively.</li>
-                    <li>Implemented a scalable, real-time solution using Docker and AWS S3, integrating cloud services for a robust architecture and applying machine learning to improve security resilience.</li>
-                </ul>
-            </div>
-            
-            <div class="experience-item">
-                <h3 class="job-title">Mobile E-commerce Application</h3>
-                <p class="company">Personal Project</p>
-                <p class="date-location">01/2023 - 04/2023 | Wembley, London</p>
-                <ul class="responsibilities">
-                    <li>Developed an online mobile app for a clothing store, emphasizing aesthetic clothing designs with user-friendly UI/UX wireframes created in Android Studio.</li>
-                    <li>Utilized Java and Kotlin for front-end and back-end development, whilst integrating Google Firebase for secure cloud storage and account management features.</li>
-                </ul>
-            </div>
-        </section>
-        
-        <section class="education">
-            <h2 class="section-title">Education</h2>
-            
-            <div class="education-item">
-                <h3 class="degree">AWS Cloud Computing</h3>
-                <p class="institution">eCareers</p>
-                <p class="date-location">10/2024 - 08/2025 | Remote, London</p>
-            </div>    
-
-            <div class="education-item">
-                <h3 class="degree">Bachelor of Computer Science</h3>
-                <p class="institution">University of West London</p>
-                <p class="date-location">09/2021 - 06/2024 | Ealing, London</p>
-            </div>
-            
-            <div class="education-item">
-                <h3 class="degree">BTEC Applied Science</h3>
-                <p class="institution">Ark Academy</p>
-                <p class="date-location">09/2019 - 06/2021 | Wembley, London</p>
-            </div>
-            
-            <div class="education-item">
-                <h3 class="degree">9 GCSE'S</h3>
-                <p class="institution">Ark Elvin Academy</p>
-                <p class="date-location">09/2014 - 06/2019 | Wembley, London</p>
-            </div>
-        </section>
-    </main>
     
     <footer>
         <div class="container">
